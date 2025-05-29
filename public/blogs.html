@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - FullyPass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">P</span>
+                    </div>
+                    <a href="/" class="text-2xl font-bold text-blue-900">FullyPass</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-blue-900 hover:text-blue-700 font-medium">Home</a>
+                    <a href="/about.html" class="text-blue-900 hover:text-blue-700 font-medium">Courses</a>
+                    <a href="/neet-ug.html" class="text-blue-900 hover:text-blue-700 font-medium">NEET UG</a>
+                    <a href="/ugc-net.html" class="text-blue-900 hover:text-blue-700 font-medium">UGC-NET</a>
+                    <a href="/blogs.html" class="text-blue-900 hover:text-blue-700 font-medium">Blogs</a>
+                    <a href="/pricing.html" class="text-blue-900 hover:text-blue-700 font-medium">Pricing</a>
+                    <a href="/contact.html" class="text-blue-900 hover:text-blue-700 font-medium">Contact</a>
+                </div>
+            </div>
+            
+            <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-medium">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl font-bold text-blue-900 mb-6">Insights & Exam Tips</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Stay updated with the latest study strategies, exam tips, and educational insights from our expert faculty.
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid lg:grid-cols-4 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-3">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="NEET Preparation Tips" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-3">NEET-UG</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">10 Essential Tips for NEET-UG Preparation</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Master these proven strategies to boost your NEET score significantly.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Dr. Priya Sharma</span>
+                                <span>Jan 15, 2025 • 5 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="UGC NET Guide" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mb-3">UGC-NET</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">UGC-NET Paper 1: Complete Study Guide</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Everything you need to know about UGC-NET Paper 1 syllabus and strategy.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Prof. Rajesh Kumar</span>
+                                <span>Jan 12, 2025 • 8 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Time Management" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-3">Study Tips</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">Time Management During Competitive Exams</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Learn effective time management techniques for better exam performance.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Dr. Anita Verma</span>
+                                <span>Jan 10, 2025 • 6 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Biology Tips" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-3">NEET-UG</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">Biology Shortcuts for NEET Success</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Quick revision techniques and memory tricks for biology topics.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Dr. Meera Patel</span>
+                                <span>Jan 8, 2025 • 7 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Research Methodology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mb-3">UGC-NET</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">Research Methodology for UGC-NET</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Comprehensive guide to research methodology concepts and applications.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Dr. Suresh Gupta</span>
+                                <span>Jan 5, 2025 • 10 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Stress Management" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-3">Wellness</span>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3 line-clamp-2">Stress Management for Students</h3>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Proven techniques to manage exam stress and maintain mental health.</p>
+                            <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                                <span>Dr. Kavita Joshi</span>
+                                <span>Jan 3, 2025 • 5 min read</span>
+                            </div>
+                            <a href="/blog-detail.html" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-8">
+                <!-- Search -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Search Articles</h3>
+                    <div class="relative">
+                        <i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"></i>
+                        <input type="text" placeholder="Search articles..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Categories</h3>
+                    <div class="space-y-2">
+                        <button class="block w-full text-left py-2 px-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-blue-900 transition-colors">All</button>
+                        <button class="block w-full text-left py-2 px-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-blue-900 transition-colors">NEET-UG</button>
+                        <button class="block w-full text-left py-2 px-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-blue-900 transition-colors">UGC-NET</button>
+                        <button class="block w-full text-left py-2 px-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-blue-900 transition-colors">Study Tips</button>
+                        <button class="block w-full text-left py-2 px-3 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-blue-900 transition-colors">Wellness</button>
+                    </div>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">Popular Posts</h3>
+                    <div class="space-y-4">
+                        <div class="border-b border-gray-100 pb-4">
+                            <h4 class="font-medium text-gray-900 mb-1 line-clamp-2">Last Minute NEET Preparation Tips</h4>
+                            <p class="text-sm text-gray-500">4 min read</p>
+                        </div>
+                        <div class="border-b border-gray-100 pb-4">
+                            <h4 class="font-medium text-gray-900 mb-1 line-clamp-2">UGC-NET Cut-off Analysis</h4>
+                            <p class="text-sm text-gray-500">6 min read</p>
+                        </div>
+                        <div class="pb-4">
+                            <h4 class="font-medium text-gray-900 mb-1 line-clamp-2">Best Books for Competitive Exams</h4>
+                            <p class="text-sm text-gray-500">7 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">P</span>
+                        </div>
+                        <span class="text-xl font-bold">FullyPass</span>
+                    </div>
+                    <p class="text-blue-200">Excel in your competitive exams with comprehensive preparation.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/neet-ug.html" class="hover:text-white transition-colors">NEET UG</a></li>
+                        <li><a href="/ugc-net.html" class="hover:text-white transition-colors">UGC-NET</a></li>
+                        <li><a href="/blogs.html" class="hover:text-white transition-colors">Blogs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Support</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="/pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Connect</h4>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">t</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">i</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 text-center text-blue-200">
+                <p>&copy; 2025 FullyPass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

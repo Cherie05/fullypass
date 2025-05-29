@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGC-NET Course - FullyPass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">P</span>
+                    </div>
+                    <a href="/" class="text-2xl font-bold text-blue-900">FullyPass</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-blue-900 hover:text-blue-700 font-medium">Home</a>
+                    <a href="/about.html" class="text-blue-900 hover:text-blue-700 font-medium">Courses</a>
+                    <a href="/neet-ug.html" class="text-blue-900 hover:text-blue-700 font-medium">NEET UG</a>
+                    <a href="/ugc-net.html" class="text-blue-900 hover:text-blue-700 font-medium">UGC-NET</a>
+                    <a href="/blogs.html" class="text-blue-900 hover:text-blue-700 font-medium">Blogs</a>
+                    <a href="/pricing.html" class="text-blue-900 hover:text-blue-700 font-medium">Pricing</a>
+                    <a href="/contact.html" class="text-blue-900 hover:text-blue-700 font-medium">Contact</a>
+                </div>
+            </div>
+            
+            <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-medium">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold text-blue-900 mb-6">UGC-NET Master Course</h1>
+            <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Complete preparation for UGC-NET with comprehensive coverage of Paper 1 and Paper 2. 
+                Get expert guidance and practice materials to qualify for Junior Research Fellowship and Assistant Professor positions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Syllabus Overview -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-blue-900 text-center mb-16">Syllabus Overview</h2>
+            
+            <div class="flex justify-center mb-12">
+                <div class="bg-gray-100 p-1 rounded-lg">
+                    <button onclick="showTab('paper1')" class="px-6 py-3 rounded-md text-lg font-medium transition-colors tab-button active" data-tab="paper1">Paper 1</button>
+                    <button onclick="showTab('paper2')" class="px-6 py-3 rounded-md text-lg font-medium transition-colors tab-button" data-tab="paper2">Paper 2</button>
+                </div>
+            </div>
+            
+            <div id="paper1" class="tab-content max-w-4xl mx-auto bg-white border border-gray-200 rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Teaching Aptitude</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Research Aptitude</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Reading Comprehension</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Communication</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Mathematical Reasoning</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Logical Reasoning</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Data Interpretation</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Information and Communication Technology</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">People, Development and Environment</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Higher Education System</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="paper2" class="tab-content max-w-4xl mx-auto bg-white border border-gray-200 rounded-lg p-8 hidden">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Subject-specific Knowledge</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Advanced Concepts</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Research Methodology</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Current Developments</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Applied Knowledge</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Case Studies</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Problem Solving</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span class="text-gray-700 font-medium">Critical Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-blue-900 text-center mb-16">What's Included</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center bg-white rounded-lg shadow-lg p-8">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="video" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl text-blue-900 font-bold mb-4">Interactive concept videos</h3>
+                    <p class="text-gray-600">Comprehensive lectures covering all UGC-NET topics</p>
+                </div>
+                <div class="text-center bg-white rounded-lg shadow-lg p-8">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl text-blue-900 font-bold mb-4">8,000+ practice questions</h3>
+                    <p class="text-gray-600">Extensive question bank with detailed explanations</p>
+                </div>
+                <div class="text-center bg-white rounded-lg shadow-lg p-8">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl text-blue-900 font-bold mb-4">Adaptive mock tests</h3>
+                    <p class="text-gray-600">Paper-wise tests simulating actual exam conditions</p>
+                </div>
+                <div class="text-center bg-white rounded-lg shadow-lg p-8">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="message-square" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl text-blue-900 font-bold mb-4">Doubt-clearing live sessions</h3>
+                    <p class="text-gray-600">Regular interaction with subject experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-16">Track Your Progress</h2>
+            
+            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-8">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Overall Course Progress</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-6">
+                        <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-6 rounded-full transition-all duration-500" style="width: 58%"></div>
+                    </div>
+                    <p class="text-gray-600 mt-2">58% Complete</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-blue-900">18</div>
+                        <div class="text-gray-600">Chapters Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-900">124</div>
+                        <div class="text-gray-600">Tests Taken</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-900">78%</div>
+                        <div class="text-gray-600">Average Score</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-blue-900 to-blue-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your UGC-NET Journey?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Qualify for JRF and Assistant Professor positions with our comprehensive preparation
+            </p>
+            <button class="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg">
+                Start Learning - Free Trial
+            </button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-blue-900 text-center mb-16">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-lg text-blue-900 font-bold mb-2">Is the course updated with latest UGC-NET syllabus?</h3>
+                        <p class="text-gray-600">Yes, our course is regularly updated to match the current UGC-NET syllabus and exam pattern.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-lg text-blue-900 font-bold mb-2">Do you provide separate preparation for Paper 1 and Paper 2?</h3>
+                        <p class="text-gray-600">Yes, we have dedicated modules for both Paper 1 (General) and Paper 2 (Subject-specific).</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-lg text-blue-900 font-bold mb-2">Are previous year papers included?</h3>
+                        <p class="text-gray-600">Yes, we provide solved previous year papers from the last 10 years with detailed explanations.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-lg text-blue-900 font-bold mb-2">What subjects are covered in Paper 2?</h3>
+                        <p class="text-gray-600">We cover all major subjects including Commerce, Management, Computer Science, English, and more.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-lg text-blue-900 font-bold mb-2">Is there any scholarship or discount available?</h3>
+                        <p class="text-gray-600">We offer various scholarship programs for meritorious students and special discounts during festive seasons.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">P</span>
+                        </div>
+                        <span class="text-xl font-bold">FullyPass</span>
+                    </div>
+                    <p class="text-blue-200">Excel in your competitive exams with comprehensive preparation.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/neet-ug.html" class="hover:text-white transition-colors">NEET UG</a></li>
+                        <li><a href="/ugc-net.html" class="hover:text-white transition-colors">UGC-NET</a></li>
+                        <li><a href="/blogs.html" class="hover:text-white transition-colors">Blogs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Support</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="/pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Connect</h4>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">t</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">i</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 text-center text-blue-200">
+                <p>&copy; 2025 FullyPass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.add('hidden'));
+            
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active', 'bg-blue-600', 'text-white');
+                button.classList.add('text-gray-600', 'hover:text-blue-600');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.remove('hidden');
+            
+            // Add active class to clicked button
+            const activeButton = document.querySelector(`[data-tab="${tabName}"]`);
+            activeButton.classList.add('active', 'bg-blue-600', 'text-white');
+            activeButton.classList.remove('text-gray-600', 'hover:text-blue-600');
+        }
+
+        // Initialize first tab as active
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstButton = document.querySelector('.tab-button');
+            firstButton.classList.add('bg-blue-600', 'text-white');
+            firstButton.classList.remove('text-gray-600');
+        });
+
+        lucide.createIcons();
+    </script>
+
+    <style>
+        .tab-button {
+            @apply text-gray-600 hover:text-blue-600;
+        }
+        .tab-button.active {
+            @apply bg-blue-600 text-white;
+        }
+    </style>
+</body>
+</html>

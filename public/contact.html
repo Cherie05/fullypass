@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FullyPass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">P</span>
+                    </div>
+                    <a href="/" class="text-2xl font-bold text-blue-900">FullyPass</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-blue-900 hover:text-blue-700 font-medium">Home</a>
+                    <a href="/about.html" class="text-blue-900 hover:text-blue-700 font-medium">Courses</a>
+                    <a href="/neet-ug.html" class="text-blue-900 hover:text-blue-700 font-medium">NEET UG</a>
+                    <a href="/ugc-net.html" class="text-blue-900 hover:text-blue-700 font-medium">UGC-NET</a>
+                    <a href="/blogs.html" class="text-blue-900 hover:text-blue-700 font-medium">Blogs</a>
+                    <a href="/pricing.html" class="text-blue-900 hover:text-blue-700 font-medium">Pricing</a>
+                    <a href="/contact.html" class="text-blue-900 hover:text-blue-700 font-medium">Contact</a>
+                </div>
+            </div>
+            
+            <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-medium">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold text-blue-900 mb-6">Get in Touch</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Have questions about our courses? Need help with your preparation? We're here to help you succeed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-8">Send us a Message</h2>
+                    
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your first name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your last name">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Select a subject</option>
+                                <option>Course Inquiry</option>
+                                <option>Technical Support</option>
+                                <option>Billing Question</option>
+                                <option>General Question</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" placeholder="Tell us how we can help you"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-lg font-medium text-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-900 mb-6">Contact Information</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            We're available 24/7 to help you with your exam preparation journey. Reach out to us through any of the following channels.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-900 mb-1">Address</h3>
+                                <p class="text-gray-600">123 Learning Lane, Koramangala,<br>Bengaluru, Karnataka 560001, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-900 mb-1">Phone</h3>
+                                <p class="text-gray-600">+91-987-654-3210<br>+91-876-543-2109</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-900 mb-1">Email</h3>
+                                <p class="text-gray-600">support@fullypass.com<br>info@fullypass.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-blue-900 mb-1">Support Hours</h3>
+                                <p class="text-gray-600">24/7 Customer Support<br>Live Chat Available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <span class="text-white font-bold">f</span>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center hover:bg-blue-500 transition-colors">
+                                <span class="text-white font-bold">t</span>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors">
+                                <span class="text-white font-bold">in</span>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <span class="text-white font-bold">yt</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Find answers to common questions about our courses and services</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">How can I enroll in a course?</h3>
+                    <p class="text-gray-600">You can enroll in any course by visiting our pricing page and selecting the plan that suits you best. Payment can be made through various methods including credit/debit cards and UPI.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Do you offer free trial classes?</h3>
+                    <p class="text-gray-600">Yes, we offer a 7-day free trial for all our courses. You can access sample lectures and materials to get a feel for our teaching methodology.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">What if I need technical support?</h3>
+                    <p class="text-gray-600">Our technical support team is available 24/7 to help you with any issues. You can reach us through live chat, email, or phone support.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Can I switch between courses?</h3>
+                    <p class="text-gray-600">Yes, you can upgrade to any higher-tier course at any time. The price difference will be adjusted, and you'll get immediate access to the new course materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">P</span>
+                        </div>
+                        <span class="text-xl font-bold">FullyPass</span>
+                    </div>
+                    <p class="text-blue-200">Excel in your competitive exams with comprehensive preparation.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/neet-ug.html" class="hover:text-white transition-colors">NEET UG</a></li>
+                        <li><a href="/ugc-net.html" class="hover:text-white transition-colors">UGC-NET</a></li>
+                        <li><a href="/blogs.html" class="hover:text-white transition-colors">Blogs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Support</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="/pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="font-bold text-lg">Connect</h4>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">t</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <span class="text-sm">i</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 text-center text-blue-200">
+                <p>&copy; 2025 FullyPass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
