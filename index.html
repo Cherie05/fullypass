@@ -7,6 +7,16 @@
     <title>FullyPass - Complete Exam Preparation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- gsap -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-XjGN5oEpnM5MYX0g0pCkQHcUFQiWEqm97yhznL3ZvbzkrI2dwTNH62PeqQvFqq4+zGLfPlG0z1zqDJHGPE7E3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+        integrity="sha512-4p1J90W4D0nppHJKGmSb52xgyxxypkAPcwQ0pudsXY/DyRxqxG3Z9x1fYlMhFMDaWZQhz2vTEsVYiwD1cEzn1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <style>
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -23,6 +33,9 @@
         .animate-float { animation: float 3s ease-in-out infinite; }
         .animate-spin-slow { animation: spin-slow 20s linear infinite; }
         .animate-spin-slow-reverse { animation: spin-slow-reverse 30s linear infinite; }
+
+
+
     </style>
 </head>
 <body class="min-h-screen bg-white">
@@ -122,43 +135,69 @@
 
     <!-- Features Section -->
     <section class="py-20 px-6 bg-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-blue-900 mb-4">Features</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z" clip-rule="evenodd"/></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Experienced Faculty</h3>
-                    <p class="text-gray-600 leading-relaxed">Learn from IIT & AIIMS alumni</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M4 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm4.625 5.63a1.235 1.235 0 0 1 1.715-.992c.504.216 1.568.702 2.916 1.48a28 28 0 0 1 2.74 1.786a1.234 1.234 0 0 1 0 1.98a28 28 0 0 1-2.74 1.784a28 28 0 0 1-2.916 1.482a1.234 1.234 0 0 1-1.715-.992a29 29 0 0 1-.176-3.264c0-1.551.112-2.719.176-3.264"/></g></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Engaging Video Lectures</h3>
-                    <p class="text-gray-600 leading-relaxed">Interactive learning experience</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M.658.44A1.5 1.5 0 0 1 1.718 0h5.587a1.5 1.5 0 0 1 1.06.44l3.414 3.414a1.5 1.5 0 0 1 .44 1.06V12.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-11c0-.398.158-.78.44-1.06ZM5.33 4.527a.75.75 0 0 1 .175 1.047L4.108 7.53a.75.75 0 0 1-1.14.094l-.838-.838a.75.75 0 0 1 1.06-1.06l.212.211l.882-1.234a.75.75 0 0 1 1.046-.175Zm.95 1.847a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m0 3.969a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m-.775-.738a.75.75 0 1 0-1.22-.872l-.883 1.235l-.212-.212a.75.75 0 0 0-1.06 1.06l.838.838a.75.75 0 0 0 1.14-.094z" clip-rule="evenodd"/></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Practice Tests & Quizzes</h3>
-                    <p class="text-gray-600 leading-relaxed">1000+ mock tests & quizzes</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="currentColor" d="M6 11h5V9H6zm-2 9q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.65 0 1.175.388t.725.987q-.425-.2-.912-.288T20 5q-2.075 0-3.537 1.463T15 10q0 .55.1 1.05t.3.95H11v1H6v2h5v1q-.95.675-1.475 1.713T9 20zm10 1q.425 0 .713-.288T15 20t-.288-.712T14 19t-.712.288T13 20t.288.713T14 21m6-10q.425 0 .713-.288T21 10t-.288-.712T20 9t-.712.288T19 10t.288.713T20 11m-6 12q-1.25 0-2.125-.875T11 20q0-.975.563-1.75T13 17.175V14h6v-1.175q-.875-.3-1.437-1.075T17 10q0-1.25.875-2.125T20 7t2.125.875T23 10q0 .975-.562 1.75T21 12.825V16h-6v1.175q.875.3 1.438 1.075T17 20q0 1.25-.875 2.125T14 23"/></svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Performance Analysis</h3>
-                    <p class="text-gray-600 leading-relaxed">Detailed performance tracking</p>
-                </div>
-            </div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Section Title (fade-element) -->
+        <div class="text-center mb-16 fade-element">
+        <h2 class="text-4xl font-bold text-blue-900 mb-4">Features</h2>
         </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1: Experienced Faculty -->
+        <div class="text-center fade-element">
+            <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
+                    clip-rule="evenodd"/>
+            </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-3">Experienced Faculty</h3>
+            <p class="text-gray-600 leading-relaxed">Learn from IIT &amp; AIIMS alumni</p>
+        </div>
+
+        <!-- Card 2: Engaging Video Lectures -->
+        <div class="text-center fade-element">
+            <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="currentColor"
+                        d="M4 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm4.625 5.63a1.235 1.235 0 0 1 1.715-.992c.504.216 1.568.702 2.916 1.48a28 28 0 0 1 2.74 1.786a1.234 1.234 0 0 1 0 1.98a28 28 0 0 1-2.74 1.784a28 28 0 0 1-2.916 1.482a1.234 1.234 0 0 1-1.715-.992a29 29 0 0 1-.176-3.264c0-1.551.112-2.719.176-3.264"/>
+                </g>
+            </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-3">Engaging Video Lectures</h3>
+            <p class="text-gray-600 leading-relaxed">Interactive learning experience</p>
+        </div>
+
+        <!-- Card 3: Practice Tests & Quizzes -->
+        <div class="text-center fade-element">
+            <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 14 14">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M.658.44A1.5 1.5 0 0 1 1.718 0h5.587a1.5 1.5 0 0 1 1.06.44l3.414 3.414a1.5 1.5 0 0 1 .44 1.06V12.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-11c0-.398.158-.78.44-1.06ZM5.33 4.527a.75.75 0 0 1 .175 1.047L4.108 7.53a.75.75 0 0 1-1.14.094l-.838-.838a.75.75 0 0 1 1.06-1.06l.212.211l.882-1.234a.75.75 0 0 1 1.046-.175Zm.95 1.847a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m0 3.969a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m-.775-.738a.75.75 0 1 0-1.22-.872l-.883 1.235l-.212-.212a.75.75 0 0 0-1.06 1.06l.838.838a.75.75 0 0 0 1.14-.094z"
+                    clip-rule="evenodd"/>
+            </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-3">Practice Tests &amp; Quizzes</h3>
+            <p class="text-gray-600 leading-relaxed">1000+ mock tests &amp; quizzes</p>
+        </div>
+
+        <!-- Card 4: Performance Analysis -->
+        <div class="text-center fade-element">
+            <div class="w-16 h-16 text-blue-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M6 11h5V9H6zm-2 9q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.65 0 1.175.388t.725.987q-.425-.2-.912-.288T20 5q-2.075 0-3.537 1.463T15 10q0 .55.1 1.05t.3.95H11v1H6v2h5v1q-.95.675-1.475 1.713T9 20zm10 1q.425 0 .713-.288T15 20t-.288-.712T14 19t-.712.288T13 20t.288.713T14 21m6-10q.425 0 .713-.288T21 10t-.288-.712T20 9t-.712.288T19 10t.288.713T20 11m-6 12q-1.25 0-2.125-.875T11 20q0-.975.563-1.75T13 17.175V14h6v-1.175q-.875-.3-1.437-1.075T17 10q0-1.25.875-2.125T20 7t2.125.875T23 10q0 .975-.562 1.75T21 12.825V16h-6v1.175q.875.3 1.438 1.075T17 20q0 1.25-.875 2.125T14 23"/>
+            </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-3">Performance Analysis</h3>
+            <p class="text-gray-600 leading-relaxed">Detailed performance tracking</p>
+        </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- Course Highlights Section -->
     <section class="py-20 px-6 bg-gray-50 relative">
@@ -186,46 +225,66 @@
 
     <!-- Statistics Section -->
     <section class="py-20 px-6 bg-blue-900 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4">Our Impact in Numbers</h2>
-                <p class="text-xl text-blue-200 max-w-3xl mx-auto">
-                    Trusted by thousands of students nationwide
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                    <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="users" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <div class="text-3xl font-bold text-white mb-2">50,000+</div>
-                    <div class="text-lg font-medium text-blue-200">Students Enrolled</div>
-                </div>
-                <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                    <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <div class="text-3xl font-bold text-white mb-2">1,200+</div>
-                    <div class="text-lg font-medium text-blue-200">Practice Tests</div>
-                </div>
-                <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                    <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="award" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <div class="text-3xl font-bold text-white mb-2">95%</div>
-                    <div class="text-lg font-medium text-blue-200">Success Rate</div>
-                </div>
-                <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                    <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="clock" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <div class="text-3xl font-bold text-white mb-2">24/7</div>
-                    <div class="text-lg font-medium text-blue-200">Support Available</div>
-                </div>
-            </div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4">Our Impact in Numbers</h2>
+        <p class="text-xl text-blue-200 max-w-3xl mx-auto">
+            Trusted by thousands of students nationwide
+        </p>
         </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Students Enrolled -->
+        <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="users" class="w-8 h-8 text-white"></i>
+            </div>
+            <!-- Animate this from 0 → 50000 -->
+            <div class="text-3xl font-bold text-white mb-2">
+            <span class="count" data-target="50000">0</span>+
+            </div>
+            <div class="text-lg font-medium text-blue-200">Students Enrolled</div>
+        </div>
+
+        <!-- Practice Tests -->
+        <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+            </div>
+            <!-- Animate this from 0 → 1200 -->
+            <div class="text-3xl font-bold text-white mb-2">
+            <span class="count" data-target="1200">0</span>+
+            </div>
+            <div class="text-lg font-medium text-blue-200">Practice Tests</div>
+        </div>
+
+        <!-- Success Rate -->
+        <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="award" class="w-8 h-8 text-white"></i>
+            </div>
+            <!-- Animate this from 0 → 95 -->
+            <div class="text-3xl font-bold text-white mb-2">
+            <span class="count" data-target="95">0</span>% 
+            </div>
+            <div class="text-lg font-medium text-blue-200">Success Rate</div>
+        </div>
+
+        <!-- Support Available -->
+        <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="clock" class="w-8 h-8 text-white"></i>
+            </div>
+            <!-- Animate just the "24" from 0 → 24, then leave "/7" static -->
+            <div class="text-3xl font-bold text-white mb-2">
+            <span class="count" data-target="24">0</span>/7
+            </div>
+            <div class="text-lg font-medium text-blue-200">Support Available</div>
+        </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- Why Choose Us Section -->
     <section class="py-20 px-6 bg-white relative">
@@ -624,5 +683,7 @@
     <script>
         lucide.createIcons();
     </script>
+
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>

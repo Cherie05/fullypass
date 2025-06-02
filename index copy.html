@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GSAP ScrollTrigger Fade-In Test</title>
+  <!-- Inline CSS just to visualize the boxes -->
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0;
+    }
+    .fade-element {
+      width: 300px;
+      height: 150px;
+      background-color: #3490dc;
+      color: #fff;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      /* Optional initial state 
+         (GSAP will override inline styles anyway). 
+         If you leave this commented out, GSAP still works:
+      opacity: 0;
+      transform: translateY(20px);
+      */
+    }
+  </style>
+</head>
+<body>
+  <!-- First section, just to push the next ones off-screen initially -->
+  <section>
+    <h1>Scroll Down to See Boxes Fade In</h1>
+  </section>
+
+  <!-- Section with two boxes that should fade in/slide up -->
+  <section>
+    <div class="fade-element" data-delay="0">
+      Box 1
+    </div>
+  </section>
+
+  <section>
+    <div class="fade-element" data-delay="200">
+      Box 2
+    </div>
+  </section>
+
+  <!-- GSAP (core) -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <!-- ScrollTrigger plugin -->
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    // 1) Register the ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 2) For each .fade-element, set up a "from" animation
+    gsap.utils.toArray('.fade-element').forEach(function(elem) {
+      // Read optional data-delay (milliseconds). Default to 0.
+      var delayMs = elem.getAttribute('data-delay');
+      var delaySec = delayMs ? parseInt(delayMs, 10) / 1000 : 0;
+
+      gsap.from(elem, {
+        scrollTrigger: {
+          trigger: elem,
+          start: 'top 80%', // as soon as the element’s top reaches 80% down the viewport
+          once: true        // animate only once
+        },
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        ease: 'power2.out',
+        delay: delaySec
+      });
+    });
+  </script>
+</body>
+</html>
